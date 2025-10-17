@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom'
 import Landing from '../src/pages/Landing.jsx'
 import './App.css'
 import Login from './pages/Login.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
  
 
