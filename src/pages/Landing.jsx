@@ -2,6 +2,7 @@ import React from "react";
 import "./Landing.css";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
+import Cards from "../components/Cards";
 
 export default function Landing() {
   const handleBookNow = () => {
@@ -48,6 +49,9 @@ export default function Landing() {
         </main>
       </div>
       <AboutUs/>
+      <div>
+      <Cards />
+    </div>
       <Footer/>
     </>
   );

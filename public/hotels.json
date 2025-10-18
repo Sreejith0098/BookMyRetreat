@@ -1,0 +1,67 @@
+[
+    {
+      "id": "1",
+      "name": "Ayur County Resort",
+      "image": "https://www.yatra.com/hotels/hotels-in-munnar/ayurcounty-resort",
+      "location": "Munnar, Kerala",
+      "rate": "₹9,000",
+      "description": "Mountain resort in Munnar with tea-estate views and forest surroundings."
+    },
+    {
+      "id": "2",
+      "name": "Grasmere Resort",
+      "image": "https://www.grasmerevagamon.com/",
+      "location": "Vagamon, Kerala",
+      "rate": "₹8,500",
+      "description": "Hill resort offering a quiet retreat in the Western Ghats."
+    },
+    {
+      "id": "3",
+      "name": "Kovalam Beach Resort",
+      "image": "https://www.theneelakantakovalam.com/index.html",
+      "location": "Kovalam, Kerala",
+      "rate": "₹12,000",
+      "description": "Beachfront resort designed by Charles Correa, offering panoramic sea views."
+    },
+    {
+      "id": "4",
+      "name": "Elephant Pass Ayurveda & Yoga Retreat",
+      "image": "https://www.elephantpassresort.com/",
+      "location": "Kochi area, Kerala",
+      "rate": "₹10,000",
+      "description": "Ayurvedic wellness retreat combining riverside forest ambience with treatments."
+    },
+    {
+      "id": "5",
+      "name": "Cocobay Resort (Kerala Backwaters Resort)",
+      "image": "https://www.cocobayresort.net/",
+      "location": "Kumarakom, Kerala",
+      "rate": "₹12,000",
+      "description": "Lakeside resort along Vembanad Lake, ideal for backwater experiences."
+    },
+    {
+      "id": "6",
+      "name": "Ayurveda Retreat Resort",
+      "image": "https://anandacherai.com/",
+      "location": "Kochi area, Kerala",
+      "rate": "₹11,000",
+      "description": "Serene retreat offering traditional Ayurvedic treatments amidst nature."
+    },
+    {
+      "id": "7",
+      "name": "Tranquil Resort",
+      "image": "https://www.tranquilresort.com/",
+      "location": "Wayanad, Kerala",
+      "rate": "₹8,000",
+      "description": "Eco-friendly resort nestled in the hills of Wayanad, offering peaceful solitude."
+    },
+    {
+      "id": "8",
+      "name": "Olives Resort",
+      "image": "https://experiencekerala.in/kerala-hotels-accommodations/hotel-details/olives-resort-wayanad",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    }
+  ]
+  
