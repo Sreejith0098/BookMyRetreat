@@ -13,7 +13,6 @@ const Cards = () => {
       .catch(console.error);
   }, []);
 
-  
   return (
     <Container className="my-5">
       <Row className="g-4">
