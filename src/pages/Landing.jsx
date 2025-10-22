@@ -1,16 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Landing.css";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import Cards from "../components/Cards";
+import ParallaxSection from "../components/ParallaxSection";
 
 export default function Landing() {
+    const [hotel, setHotel] = useState([]);
+    const[filteredHotels,setFilteredHotels] = useState([]);
+
   const handleBookNow = () => {
     alert("Booking feature coming soon!");
   };
   const handleExploreMore = () => {
     alert("Explore more section coming soon!");
   };
+  const allHotels =()=>{
+    setFilteredHotels(hotel)
+}
+const ShowExpensive = () => {
+    console.log(hotel); 
+    const expensive = hotel.filter((eachHotel) => eachHotel.rate > 5000);
+    setFilteredHotels(expensive);
+  };
+  
+
+useEffect(() => {
+    fetch("/hotels.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setHotel(data);
+        setFilteredHotels(data); 
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <>
       <div className="resort-root">
@@ -50,8 +74,13 @@ export default function Landing() {
       </div>
       <AboutUs/>
       <div>
-      <Cards />
+        <div style={{position:'relative',left:'1100px'}} >
+            <button onClick={allHotels} className="btn btn-outline-primary">All Resorts</button>
+            <button onClick={ShowExpensive} className="btn btn-outline-primary ms-2">Premium Resorts</button>
+        </div>
+      <Cards hotel={filteredHotels} />
     </div>
+    <ParallaxSection/>
       <Footer/>
     </>
   );

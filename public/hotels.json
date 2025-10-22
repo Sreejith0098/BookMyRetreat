@@ -2,39 +2,39 @@
     {
       "id": "1",
       "name": "Ayur County Resort",
-      "image": "https://www.yatra.com/hotels/hotels-in-munnar/ayurcounty-resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszUZMzvs93mA8t_TirloPfQv0P1smpJCgog&s",
       "location": "Munnar, Kerala",
-      "rate": "₹9,000",
+      "rate": "₹5,000",
       "description": "Mountain resort in Munnar with tea-estate views and forest surroundings."
     },
     {
       "id": "2",
       "name": "Grasmere Resort",
-      "image": "https://www.grasmerevagamon.com/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8FadPT71COmiKX_k8xpmFDAXGMGmyATTNHA&s",
       "location": "Vagamon, Kerala",
-      "rate": "₹8,500",
+      "rate": "₹3,500",
       "description": "Hill resort offering a quiet retreat in the Western Ghats."
     },
     {
       "id": "3",
       "name": "Kovalam Beach Resort",
-      "image": "https://www.theneelakantakovalam.com/index.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCFII2fPinx7Km7gq7RLXQv6ktEaMB1LKxuA&s",
       "location": "Kovalam, Kerala",
-      "rate": "₹12,000",
+      "rate": "₹11,000",
       "description": "Beachfront resort designed by Charles Correa, offering panoramic sea views."
     },
     {
       "id": "4",
       "name": "Elephant Pass Ayurveda & Yoga Retreat",
-      "image": "https://www.elephantpassresort.com/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf5JbWUQApKbde0mcDHJ-DxU3llLO1070PA&s",
       "location": "Kochi area, Kerala",
-      "rate": "₹10,000",
+      "rate": "₹4,000",
       "description": "Ayurvedic wellness retreat combining riverside forest ambience with treatments."
     },
     {
       "id": "5",
       "name": "Cocobay Resort (Kerala Backwaters Resort)",
-      "image": "https://www.cocobayresort.net/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9Xpq1rm2xRwC4ycvSyCPFqvQ4EOIWGDBXQ&s",
       "location": "Kumarakom, Kerala",
       "rate": "₹12,000",
       "description": "Lakeside resort along Vembanad Lake, ideal for backwater experiences."
@@ -42,7 +42,7 @@
     {
       "id": "6",
       "name": "Ayurveda Retreat Resort",
-      "image": "https://anandacherai.com/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid6r9FkVMBS6FWQjdCLV5ypt1AfK6LNJH_Q&s",
       "location": "Kochi area, Kerala",
       "rate": "₹11,000",
       "description": "Serene retreat offering traditional Ayurvedic treatments amidst nature."
@@ -50,18 +50,124 @@
     {
       "id": "7",
       "name": "Tranquil Resort",
-      "image": "https://www.tranquilresort.com/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwd4JMbQYYeqAiDKkNbOS9hnc551jwcDOIrw&s",
       "location": "Wayanad, Kerala",
-      "rate": "₹8,000",
+      "rate": "₹7,000",
       "description": "Eco-friendly resort nestled in the hills of Wayanad, offering peaceful solitude."
     },
     {
       "id": "8",
       "name": "Olives Resort",
-      "image": "https://experiencekerala.in/kerala-hotels-accommodations/hotel-details/olives-resort-wayanad",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCej-GtKmN8lAlgiy5ilcbAwLYyGIoCXfzqg&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹3,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+      "id": "9",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPtvbEuTXL6yFaZjA2OGrJ4u-Btj2O0hOWhg&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."  
+    },
+    {
+        "id": "10",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKXwV9j_aE8Iqla0UgsQ4rI1v_lRLpiaPFg&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+
+ {
+        "id": "11",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCTYi4Rhjq26pxjB2G1g71XhHHViQPpvo1A&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "12",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwd4JMbQYYeqAiDKkNbOS9hnc551jwcDOIrw&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "13",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3sorlBAc80oXxEcl6c1iV0-uIzbk63MJChg&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "14",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdFMbWqozgiYEf0Dq6yWmG1E5Bi2fDLAqBSA&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "15",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JlWiBVztjg-XNpBCQbqb9BsctCwAeLgY4A&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "16",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN5Zx_6LbEbFLEzwZz5R_MoZgIAmhnM8POPw&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "17",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXw0uN1pNL6AqtuWppKrvNvDv-vkisLOr3jQ&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "18",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlhleA7u-bQacxkr0LRbwf2bQ20iG5AEfNoA&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "19",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp7GdL9Yi1RYyzy-JmvYb34wp6wxImDdDjHQ&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "20",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QRTcpHEmiInpjpIHvPxijZg9ygPjRtEL9w&s",
+      "location": "Kalpetta, Wayanad, Kerala",
+      "rate": "₹9,500",
+      "description": "Resort offering panoramic views of the Wayanad hills and valleys."
+    },
+    {
+        "id": "21",
+      "name": "Olives Resort",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlhleA7u-bQacxkr0LRbwf2bQ20iG5AEfNoA&s",
       "location": "Kalpetta, Wayanad, Kerala",
       "rate": "₹9,500",
       "description": "Resort offering panoramic views of the Wayanad hills and valleys."
     }
+
   ]
   

@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Cards = () => {
-  const [hotel, setHotel] = useState([]);
-
-  useEffect(() => {
-    fetch("/hotels.json")
-      .then((res) => res.json())
-      .then(setHotel)
-      .catch(console.error);
-  }, []);
-
-  
+const Cards = ({hotel}) => {
+ 
   return (
     <Container className="my-5">
       <Row className="g-4">
@@ -29,6 +19,7 @@ const Cards = () => {
               <Card.Body>
                 <Card.Title>{eachHotel.name}</Card.Title>
                 <Card.Text>{eachHotel.location}</Card.Text>
+                <div className="d-flex justify-content-between">
                 <Button
                   variant="primary"
                   href={eachHotel.url}
@@ -37,6 +28,8 @@ const Cards = () => {
                 >
                   Book Now
                 </Button>
+                <h5 className="fw-bold" >{eachHotel.rate}</h5>
+                </div>
               </Card.Body>
             </Card>
           </Col>
