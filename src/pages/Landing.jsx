@@ -4,14 +4,15 @@ import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import Cards from "../components/Cards";
 import ParallaxSection from "../components/ParallaxSection";
+import Testimonials from "../components/Testimonials";
+import AOS from 'aos'
+import "aos/dist/aos.css"; 
 
 export default function Landing() {
     const [hotel, setHotel] = useState([]);
     const[filteredHotels,setFilteredHotels] = useState([]);
 
-  const handleBookNow = () => {
-    alert("Booking feature coming soon!");
-  };
+
   const handleExploreMore = () => {
     alert("Explore more section coming soon!");
   };
@@ -23,8 +24,14 @@ const ShowExpensive = () => {
     const expensive = hotel.filter((eachHotel) => eachHotel.rate > 5000);
     setFilteredHotels(expensive);
   };
-  
+  useEffect(()=>{
+    AOS.init({
+       duration:1000,
+       once: false,
 
+    })
+  },[])
+  
 useEffect(() => {
     fetch("/hotels.json")
       .then((res) => res.json())
@@ -44,14 +51,13 @@ useEffect(() => {
           <div className="logo ps-3">BookMyRetreat</div>
           <nav>
             <button className="nav-btn">Home</button>
-            <button className="nav-btn">Rooms</button>
-            <button className="nav-btn">Facilities</button>
+            <a style={{textDecoration:"none"}} href="#cards" className="nav-btn">Resorts</a>
             <button className="nav-btn">Contact</button>
           </nav>
         </header>
 
-        <main className="hero">
-          <h1
+        <main data-aos="fade-up" className="hero">
+          <h1 
             style={{ fontFamily: "italianno", fontSize: "100px" }}
             className="title"
           >
@@ -63,9 +69,9 @@ useEffect(() => {
           </p>
 
           <div className="actions">
-            <button className="primary" onClick={handleBookNow}>
+            <a href="#cards" style={{textDecoration:'none'}} className="primary">
               Book Now
-            </button>
+            </a>
             <button className="secondary" onClick={handleExploreMore}>
               Explore More
             </button>
@@ -73,14 +79,15 @@ useEffect(() => {
         </main>
       </div>
       <AboutUs/>
-      <div>
-        <div style={{position:'relative',left:'1100px'}} >
-            <button onClick={allHotels} className="btn btn-outline-primary">All Resorts</button>
+      <div >
+        <div data-aos="fade-left" style={{display:'flex',justifyContent:'flex-end',marginRight:'88px'}} >
+            <button onClick={allHotels} className="btn btn-outline-warning">All Resorts</button>
             <button onClick={ShowExpensive} className="btn btn-outline-primary ms-2">Premium Resorts</button>
         </div>
       <Cards hotel={filteredHotels} />
     </div>
     <ParallaxSection/>
+    <Testimonials/>
       <Footer/>
     </>
   );

@@ -1,15 +1,16 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
-
+import AOS from 'aos'
+import "aos/dist/aos.css"; 
 const Cards = ({hotel}) => {
  
   return (
-    <Container className="my-5">
-      <Row className="g-4">
+    <Container id="cards" className="my-5">
+      <Row  className="g-4">
         {hotel.map((eachHotel) => (
           <Col key={eachHotel.id} xs={12} sm={6} md={4}>
-            <Card className="shadow-sm h-100">
+            <Card data-aos="fade-up" className="shadow-sm h-100">
               <Card.Img
                 variant="top"
                 src={eachHotel.image}
@@ -28,7 +29,7 @@ const Cards = ({hotel}) => {
                 >
                   Book Now
                 </Button>
-                <h5 className="fw-bold" >{eachHotel.rate}</h5>
+                <h5 className="fw-bold" >₹{eachHotel.rate}</h5>
                 </div>
               </Card.Body>
             </Card>
