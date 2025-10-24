@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function ResortAuthPages() {
   const [isLogin, setIsLogin] = useState(true);
@@ -35,8 +35,8 @@ export default function ResortAuthPages() {
       ></div>
 
      
-      <div className="card p-4 shadow position-relative" style={{ zIndex: 1, minWidth: "400px", maxWidth: "500px" }}>
-        <h2 className="card-title text-center mb-3">{isLogin ? "Login" : "Create an Account"}</h2>
+      <div className="card p-4 shadow position-relative" style={{ zIndex: 1, minWidth: "400px", maxWidth: "500px",background:'rgba(255, 255, 255, 0.10)',backdropFilter:"blur(11px)" }}>
+        <h2  className="card-title text-light text-center mb-3">{isLogin ? "Login" : "Create an Account"}</h2>
         <p className="text-center text-muted mb-4">
           
             
@@ -45,7 +45,7 @@ export default function ResortAuthPages() {
         <form onSubmit={handleSubmit}>
           {!isLogin && (
             <div className="mb-3">
-              <input
+              <input style={{background:'rgba(255,255,255,0.10)',border:'1px solid rgba(255,255,255,0.14)'}}
                 type="text"
                 className="form-control"
                 placeholder="Full Name"
@@ -54,7 +54,7 @@ export default function ResortAuthPages() {
             </div>
           )}
           <div className="mb-3">
-            <input
+            <input  style={{background:'rgba(255,255,255,0.10)',border:'1px solid rgba(255,255,255,0.14)'}}
               type="email"
               className="form-control"
               placeholder="Email Address"
@@ -62,14 +62,14 @@ export default function ResortAuthPages() {
             />
           </div>
           <div className="mb-3">
-            <input
+            <input style={{background:'rgba(255,255,255,0.10)',border:'1px solid rgba(255,255,255,0.14)'}}
               type="password"
               className="form-control"
               placeholder="Password"
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary w-100">
+          <button type="submit" className="btn fw-bold  btn-light w-100">
             {isLogin ? "Login" : "Sign Up"}
           </button>
         </form>
