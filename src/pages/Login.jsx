@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function ResortAuthPages() {
   const [isLogin, setIsLogin] = useState(true);
@@ -22,7 +21,6 @@ export default function ResortAuthPages() {
         backgroundPosition: "center",
       }}
     >
-      
       <div
         style={{
           position: "absolute",
@@ -34,18 +32,29 @@ export default function ResortAuthPages() {
         }}
       ></div>
 
-     
-      <div className="card p-4 shadow position-relative" style={{ zIndex: 1, minWidth: "400px", maxWidth: "500px",background:'rgba(255, 255, 255, 0.10)',backdropFilter:"blur(11px)" }}>
-        <h2  className="card-title text-light text-center mb-3">{isLogin ? "Login" : "Create an Account"}</h2>
-        <p className="text-center text-muted mb-4">
-          
-            
-        </p>
+      <div
+        className="card p-4 shadow position-relative"
+        style={{
+          zIndex: 1,
+          minWidth: "400px",
+          maxWidth: "500px",
+          background: "rgba(255, 255, 255, 0.10)",
+          backdropFilter: "blur(11px)",
+        }}
+      >
+        <h2 className="card-title text-light text-center mb-3">
+          {isLogin ? "Login" : "Create an Account"}
+        </h2>
+        <p className="text-center text-muted mb-4"></p>
 
         <form onSubmit={handleSubmit}>
           {!isLogin && (
             <div className="mb-3">
-              <input style={{background:'rgba(255,255,255,0.10)',border:'1px solid rgba(255,255,255,0.14)'}}
+              <input
+                style={{
+                  background: "rgba(255,255,255,0.10)",
+                  border: "1px solid rgba(255,255,255,0.14)",
+                }}
                 type="text"
                 className="form-control"
                 placeholder="Full Name"
@@ -54,7 +63,11 @@ export default function ResortAuthPages() {
             </div>
           )}
           <div className="mb-3">
-            <input  style={{background:'rgba(255,255,255,0.10)',border:'1px solid rgba(255,255,255,0.14)'}}
+            <input
+              style={{
+                background: "rgba(255,255,255,0.10)",
+                border: "1px solid rgba(255,255,255,0.14)",
+              }}
               type="email"
               className="form-control"
               placeholder="Email Address"
@@ -62,7 +75,11 @@ export default function ResortAuthPages() {
             />
           </div>
           <div className="mb-3">
-            <input style={{background:'rgba(255,255,255,0.10)',border:'1px solid rgba(255,255,255,0.14)'}}
+            <input
+              style={{
+                background: "rgba(255,255,255,0.10)",
+                border: "1px solid rgba(255,255,255,0.14)",
+              }}
               type="password"
               className="form-control"
               placeholder="Password"
@@ -87,7 +104,10 @@ export default function ResortAuthPages() {
       </div>
 
       {/* Footer */}
-      <footer className="text-white mt-4 position-relative" style={{ zIndex: 1 }}>
+      <footer
+        className="text-white mt-4 position-relative"
+        style={{ zIndex: 1 }}
+      >
         © 2025 BookMyRetreat. All rights reserved.
       </footer>
     </div>
