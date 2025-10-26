@@ -11,7 +11,6 @@ export default function ResortAuthPages() {
       alert("Signup successful (demo)");
     }
   };
-
   return (
     <div
       className="d-flex flex-column justify-content-center align-items-center vh-100 position-relative"
