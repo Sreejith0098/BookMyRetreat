@@ -11,15 +11,18 @@ export default function ResortAuthPages() {
       alert("Signup successful (demo)");
     }
   };
+
   return (
     <div
       className="d-flex flex-column justify-content-center align-items-center vh-100 position-relative"
       style={{
-        backgroundImage: `url('beach.jpg')`,
+        backgroundImage: `url('beach.jpg')`, // ✅ Keep your original background
         backgroundSize: "cover",
         backgroundPosition: "center",
+        fontFamily: "'Poppins', sans-serif",
       }}
     >
+      {/* Overlay */}
       <div
         style={{
           position: "absolute",
@@ -27,74 +30,108 @@ export default function ResortAuthPages() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: "rgba(0,0,0,0.5)",
+          backgroundColor: "rgba(0,0,0,0.55)",
         }}
       ></div>
 
+      {/* Card */}
       <div
-        className="card p-4 shadow position-relative"
+        className="card p-5 shadow position-relative"
         style={{
           zIndex: 1,
-          minWidth: "400px",
-          maxWidth: "500px",
-          background: "rgba(255, 255, 255, 0.10)",
-          backdropFilter: "blur(11px)",
+          width: "400px",
+          borderRadius: "18px",
+          background: "rgba(255, 255, 255, 0.15)",
+          border: "1px solid rgba(255,255,255,0.25)",
+          backdropFilter: "blur(12px)",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+          color: "#fff",
+          transition: "all 0.3s ease",
         }}
       >
-        <h2 className="card-title text-light text-center mb-3">
-          {isLogin ? "Login" : "Create an Account"}
+        <h2 className="text-center fw-bold mb-3">
+          {isLogin ? "Welcome Back" : "Create an Account"}
         </h2>
-        <p className="text-center text-muted mb-4"></p>
+        <p className="text-center text-light mb-4" style={{ opacity: 0.8 }}>
+          {isLogin
+            ? "Login to continue your resort experience"
+            : "Sign up and start exploring beautiful resorts"}
+        </p>
 
         <form onSubmit={handleSubmit}>
           {!isLogin && (
             <div className="mb-3">
               <input
-                style={{
-                  background: "rgba(255,255,255,0.10)",
-                  border: "1px solid rgba(255,255,255,0.14)",
-                }}
                 type="text"
-                className="form-control"
+                className="form-control text-light"
                 placeholder="Full Name"
                 required
+                style={{
+                  background: "rgba(255,255,255,0.08)",
+                  border: "1px solid rgba(255,255,255,0.25)",
+                }}
               />
             </div>
           )}
           <div className="mb-3">
             <input
-              style={{
-                background: "rgba(255,255,255,0.10)",
-                border: "1px solid rgba(255,255,255,0.14)",
-              }}
               type="email"
-              className="form-control"
+              className="form-control text-light"
               placeholder="Email Address"
               required
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(255,255,255,0.25)",
+              }}
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-4">
             <input
-              style={{
-                background: "rgba(255,255,255,0.10)",
-                border: "1px solid rgba(255,255,255,0.14)",
-              }}
               type="password"
-              className="form-control"
+              className="form-control text-light"
               placeholder="Password"
               required
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(255,255,255,0.25)",
+              }}
             />
           </div>
-          <button type="submit" className="btn fw-bold  btn-light w-100">
+
+          <button
+            type="submit"
+            className="btn w-100 fw-bold"
+            style={{
+              background: "linear-gradient(135deg, #f8b500, #fceabb)",
+              border: "none",
+              color: "#333",
+              borderRadius: "30px",
+              padding: "10px 0",
+              boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+              transition: "transform 0.2s ease, box-shadow 0.3s ease",
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.transform = "scale(1.03)";
+              e.currentTarget.style.boxShadow = "0 6px 15px rgba(0,0,0,0.3)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "0 4px 10px rgba(0,0,0,0.2)";
+            }}
+          >
             {isLogin ? "Login" : "Sign Up"}
           </button>
         </form>
 
-        <p className="text-center mt-3">
+        <p className="text-center mt-4">
           {isLogin ? "Don't have an account?" : "Already have an account?"}
           <button
             type="button"
-            className="btn btn-link p-0 ms-1"
+            className="btn btn-link text-warning p-0 ms-1"
+            style={{
+              fontWeight: "600",
+              textDecoration: "none",
+            }}
             onClick={() => setIsLogin(!isLogin)}
           >
             {isLogin ? "Sign Up" : "Login"}
@@ -105,9 +142,13 @@ export default function ResortAuthPages() {
       {/* Footer */}
       <footer
         className="text-white mt-4 position-relative"
-        style={{ zIndex: 1 }}
+        style={{
+          zIndex: 1,
+          opacity: 0.85,
+          fontSize: "0.9rem",
+        }}
       >
-        © 2025 BookMyRetreat. All rights reserved.
+        © 2025 <strong>BookMyRetreat</strong>. All rights reserved.
       </footer>
     </div>
   );
