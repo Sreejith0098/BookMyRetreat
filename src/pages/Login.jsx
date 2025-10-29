@@ -16,7 +16,7 @@ export default function ResortAuthPages() {
     <div
       className="d-flex flex-column justify-content-center align-items-center vh-100 position-relative"
       style={{
-        backgroundImage: `url('beach.jpg')`, 
+        backgroundImage: `url('beach.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         fontFamily: "'Poppins', sans-serif",
@@ -52,7 +52,6 @@ export default function ResortAuthPages() {
         <h2 className="text-center fw-bold mb-3">
           {isLogin ? "Login" : "Create an Account"}
         </h2>
-      
 
         <form onSubmit={handleSubmit}>
           {!isLogin && (
