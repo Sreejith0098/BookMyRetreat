@@ -120,7 +120,7 @@ export default function Landing() {
             marginRight: "88px",
           }}
         >
-            {/* sorting resorts based on rate */}
+          {/* sorting resorts based on rate */}
           <div className="ms-3 me-3 d-flex align-items-center gap-3">
             <label
               className={`d-flex align-items-center px-3 py-2 border rounded ${
