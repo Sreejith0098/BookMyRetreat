@@ -66,7 +66,7 @@ export default function Landing() {
     <>
       <div className="resort-root">
         <div className="overlay" />
-
+ 
         <header className="nav">
           <div className="logo ps-3">BookMyRetreat</div>
           <nav>
