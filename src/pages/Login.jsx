@@ -52,7 +52,6 @@ export default function ResortAuthPages() {
         <h2 className="text-center fw-bold mb-3">
           {isLogin ? "Login" : "Create an Account"}
         </h2>
-
         <form onSubmit={handleSubmit}>
           {!isLogin && (
             <div className="mb-3">
