@@ -3,7 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer style={{backgroundColor:"#023E8A"}} className=" text-white pt-5 pb-4">
+      <footer
+        style={{ backgroundColor: "#023E8A" }}
+        className=" text-white pt-5 pb-4"
+      >
         <div className="container text-md-left">
           <div className="row text-md-left">
             <div className="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
@@ -90,7 +93,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer> 
+      </footer>
     </div>
   );
 };
