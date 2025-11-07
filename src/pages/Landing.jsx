@@ -112,72 +112,82 @@ export default function Landing() {
       <AboutUs />
 
       <div>
-        <div
-          data-aos="fade-left"
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            marginRight: "88px",
-          }}
-        >
-          {/* sorting resorts based on rate */}
-          <div className="ms-3 me-3 d-flex align-items-center gap-3">
-            <label
-              className={`d-flex align-items-center px-3 py-2 border rounded ${
-                sortOrder === "asc"
-                  ? "bg-primary text-white"
-                  : "bg-light text-dark"
-              }`}
-              style={{ cursor: "pointer", transition: "all 0.3s" }}
-            >
-              <input
-                type="radio"
-                name="sort"
-                value="asc"
-                checked={sortOrder === "asc"}
-                onChange={handleSortChange}
-                className="me-2"
-              />
-              Low to High
-            </label>
+      <div
+  data-aos="fade-left"
+  className="d-flex flex-wrap justify-content-center justify-content-md-end align-items-center gap-3 px-3 py-3"
+  style={{
+    backgroundColor: "#f8f9fa",
+    borderRadius: "12px",
+    margin: "20px auto",
+    maxWidth: "95%",
+  }}
+>
+  {/* Sorting Section */}
+  <div className="d-flex flex-wrap align-items-center justify-content-center gap-3">
+    <label
+      className={`d-flex align-items-center px-3 py-2 border rounded-pill shadow-sm ${
+        sortOrder === "asc" ? "bg-primary text-white" : "bg-white text-dark"
+      }`}
+      style={{
+        cursor: "pointer",
+        transition: "all 0.3s ease",
+      }}
+    >
+      <input
+        type="radio"
+        name="sort"
+        value="asc"
+        checked={sortOrder === "asc"}
+        onChange={handleSortChange}
+        className="me-2"
+      />
+      Low to High
+    </label>
 
-            <label
-              className={`d-flex align-items-center px-3 py-2 border rounded ${
-                sortOrder === "desc"
-                  ? "bg-primary text-white"
-                  : "bg-light text-dark"
-              }`}
-              style={{ cursor: "pointer", transition: "all 0.3s" }}
-            >
-              <input
-                type="radio"
-                name="sort"
-                value="desc"
-                checked={sortOrder === "desc"}
-                onChange={handleSortChange}
-                className="me-2"
-              />
-              High to Low
-            </label>
-          </div>
-          {/* button section for all resorts and expensive resorts */}
-          <button
-            onClick={allHotels}
-            className={`btn me-3 ${
-              selected === "all" ? "btn-warning" : "btn-outline-warning"
-            }`}
-          >
-            All Resorts
-          </button>
-          <button
-            onClick={ShowExpensive}
-            className={`btn ${
-              selected === "premium" ? "btn-primary" : "btn-outline-primary"
-            }`}
-          >
-            Premium Resorts
-          </button>
-        </div>
+    <label
+      className={`d-flex align-items-center px-3 py-2 border rounded-pill shadow-sm ${
+        sortOrder === "desc" ? "bg-primary text-white" : "bg-white text-dark"
+      }`}
+      style={{
+        cursor: "pointer",
+        transition: "all 0.3s ease",
+      }}
+    >
+      <input
+        type="radio"
+        name="sort"
+        value="desc"
+        checked={sortOrder === "desc"}
+        onChange={handleSortChange}
+        className="me-2"
+      />
+      High to Low
+    </label>
+  </div>
+
+  {/* Button Section */}
+  <div className="d-flex flex-wrap justify-content-center gap-3">
+    <button
+      onClick={allHotels}
+      className={`btn px-4 py-2 fw-semibold rounded-pill shadow-sm ${
+        selected === "all" ? "btn-warning text-dark" : "btn-outline-warning"
+      }`}
+      style={{ transition: "all 0.3s ease" }}
+    >
+      All Resorts
+    </button>
+    <button
+      onClick={ShowExpensive}
+      className={`btn px-4 py-2 fw-semibold rounded-pill shadow-sm ${
+        selected === "premium" ? "btn-primary" : "btn-outline-primary"
+      }`}
+      style={{ transition: "all 0.3s ease" }}
+    >
+      Premium Resorts
+    </button>
+  </div>
+</div>
+
 
         <Cards hotel={filteredHotels} />
       </div>
