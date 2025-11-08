@@ -116,7 +116,7 @@ export default function Landing() {
   data-aos="fade-left"
   className="d-flex flex-wrap justify-content-center justify-content-md-end align-items-center gap-3 px-3 py-3"
   style={{
-    backgroundColor: "#f8f9fa",
+    
     borderRadius: "12px",
     margin: "20px auto",
     maxWidth: "95%",
