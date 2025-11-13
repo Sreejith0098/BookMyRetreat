@@ -7,8 +7,9 @@ export default function ParallaxSection() {
       <div className="parallax-overlay">
         <div className="parallax-content">
           <h2>Book My Retreat</h2>
-          <p>Relax, unwind, and enjoy breathtaking views at our luxury resorts.</p>
-          
+          <p>
+            Relax, unwind, and enjoy breathtaking views at our luxury resorts.
+          </p>
         </div>
       </div>
     </section>
