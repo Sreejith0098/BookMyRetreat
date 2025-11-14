@@ -20,7 +20,7 @@ const Cards = ({ hotel }) => {
             xs={12} // full width on extra small screens
             sm={6} // 2 cards per row on small screens
             md={4} // 3 cards per row on medium screens
-            lg={3} // 4 cards per row on large screens
+            lg={4} // 4 cards per row on large screens
           >
             <Card
               data-aos="fade-up"
