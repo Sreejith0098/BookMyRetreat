@@ -81,7 +81,7 @@ export default function Landing() {
             <button className="nav-btn">Contact</button>
           </nav>
         </header>
-        
+
         <main data-aos="fade-up" className="hero">
           <h1
             style={{ fontFamily: "italianno", fontSize: "100px" }}
