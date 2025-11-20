@@ -28,7 +28,6 @@ export default function Landing() {
     setSelected("premium");
   };
 
-  
   useEffect(() => {
     AOS.init({
       duration: 1000,
