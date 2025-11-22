@@ -3,7 +3,6 @@ import img1 from "../../src/assets/aboutImg1.jpg";
 import img2 from "../../src/assets/aboutImg2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });

@@ -132,7 +132,6 @@ export default function ResortAuthPages() {
           </button>
         </p>
       </div>
-
       {/* Footer */}
       <footer
         className="text-white mt-4 position-relative"
