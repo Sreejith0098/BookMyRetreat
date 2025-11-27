@@ -1,58 +1,57 @@
 .testimonial-card {
-    background: #ffffff;
-    border-radius: 25px;
-    padding: 25px;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .testimonial-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .testimonial-content {
-    position: relative;
-    font-style: italic;
-    color: #555;
-    padding-bottom: 20px;
-    border-bottom: 2px dashed #e0e0e0;
-  }
-  
-  .testimonial-content::after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 30px;
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 12px solid #ffffff;
-  }
-  
-  .testimonial-author {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    gap: 12px;
-  }
-  
-  .testimonial-author img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #5bb98a;
-  }
-  
-  .testimonial-author h6 {
-    margin: 0;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .testimonial-author small {
-    color: #888;
-  }
-  
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-content {
+  position: relative;
+  font-style: italic;
+  color: #555;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #e0e0e0;
+}
+
+.testimonial-content::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #ffffff;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5bb98a;
+}
+
+.testimonial-author h6 {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.testimonial-author small {
+  color: #888;
+}
