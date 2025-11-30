@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
+        
       </Routes>
     </>
   );
